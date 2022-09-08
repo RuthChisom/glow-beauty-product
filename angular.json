@@ -24,6 +24,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/bootstrap/dist/css/bootstrap.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -119,6 +120,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "glow-beauty-product"
+    }
+  },
+  "defaultProject": "glow-beauty-product",
+  "cli": {
+    "analytics": "ed94833f-80fe-4a70-8ef4-2fa0abadae48"
+  }
 }

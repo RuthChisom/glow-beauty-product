@@ -1,1 +1,154 @@
-/* You can add global styles to this file, and also import other style files */
+
+.spacer {
+  flex: 1;
+}
+.toolbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  background-color: #eee;
+  font-weight: 600;
+}
+.toolbar a {
+  color: #24292e;
+  padding: 10px 10px 10px 10px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: lighter;
+}
+.toolbar img {
+  margin: 0 16px;
+}
+.toolbar #twitter-logo {
+  height: 40px;
+  margin: 0 16px;
+}
+.toolbar #twitter-logo:hover {
+  opacity: 0.8;
+}
+.content {
+  margin: 0;
+}
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 16px;
+}
+.card {
+  border-radius: 4px;
+  border: 1px solid #eee;
+  background-color: #fafafa;
+  height: 40px;
+  width: 200px;
+  margin: 0 8px 16px;
+  padding: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+  line-height: 24px;
+}
+.card-container .card:not(:last-child) {
+  margin-right: 0;
+}
+.card-container .card:not(.highlight-card) {
+  cursor: pointer;
+}
+.card-container .card:not(.highlight-card):hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
+}
+.card-container .card:not(.highlight-card):hover .material-icons path {
+  fill: #696767;
+}
+.card-left {
+  background-image: url(assets/images/home2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 1000px;
+  margin: 10px 10px 10px 10px;
+  padding: 16px;
+  height: 400px;
+}
+.card-left h1 {
+  font-size: 80px;
+  font-weight: lighter;
+}
+.img-icon {
+  width: 120px;
+  margin-bottom: -10px;
+}
+.button-danger {
+  background-color: #ff4500;
+  border-radius: 20%;
+  border-color: transparent;
+  padding: 5px 5px 5px 5px;
+  margin-top: 30px;
+}
+.button-trans {
+  background-color: transparent;
+  border-color: transparent;
+}
+a,
+a:hover {
+  color: #1976d2;
+  text-decoration: none;
+}
+a:hover {
+  color: #125699;
+}
+footer {
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  line-height: 20px;
+}
+footer a {
+  display: flex;
+  align-items: center;
+}
+.github-star-badge {
+  color: #24292e;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  padding: 3px 10px;
+  border: 1px solid rgba(27, 31, 35, 0.2);
+  border-radius: 3px;
+  background-image: linear-gradient(-180deg, #fafbfc, #eff3f6 90%);
+  margin-left: 4px;
+  font-weight: 600;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
+    sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+}
+.github-star-badge:hover {
+  background-image: linear-gradient(-180deg, #f0f3f6, #e6ebf1 90%);
+  border-color: rgba(27, 31, 35, 0.35);
+  background-position: -0.5em;
+}
+.github-star-badge .material-icons {
+  height: 16px;
+  width: 16px;
+  margin-right: 4px;
+}
+svg#clouds {
+  position: fixed;
+  bottom: -160px;
+  left: -230px;
+  z-index: -10;
+  width: 1920px;
+}
+@media screen and (max-width: 767px) {
+  .card-container > :not(.circle-link) {
+    width: 100%;
+  }
+  .card:not(.highlight-card) {
+    height: 16px;
+    margin: 8px 0;
+  }
+}
