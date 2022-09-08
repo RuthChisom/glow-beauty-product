@@ -7,10 +7,10 @@
   top: 0;
   left: 0;
   right: 0;
-  height: 60px;
+  height: 63px;
   display: flex;
   align-items: center;
-  background-color: #eee;
+  background-color: rgb(248, 245, 245);
   font-weight: 600;
 }
 .toolbar a {
@@ -30,13 +30,13 @@
   opacity: 0.8;
 }
 .content {
-  margin: 0;
+  margin: 10px 10px 10px 10px;
 }
 .card-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 16px;
+  margin-top: 70px;
 }
 .card {
   border-radius: 4px;
@@ -94,7 +94,7 @@
   background-color: transparent;
   border-color: transparent;
 }
-a,
+
 a:hover {
   color: #1976d2;
   text-decoration: none;
@@ -102,40 +102,7 @@ a:hover {
 a:hover {
   color: #125699;
 }
-footer {
-  margin-top: 8px;
-  display: flex;
-  align-items: center;
-  line-height: 20px;
-}
-footer a {
-  display: flex;
-  align-items: center;
-}
-.github-star-badge {
-  color: #24292e;
-  display: flex;
-  align-items: center;
-  font-size: 12px;
-  padding: 3px 10px;
-  border: 1px solid rgba(27, 31, 35, 0.2);
-  border-radius: 3px;
-  background-image: linear-gradient(-180deg, #fafbfc, #eff3f6 90%);
-  margin-left: 4px;
-  font-weight: 600;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
-    sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
-}
-.github-star-badge:hover {
-  background-image: linear-gradient(-180deg, #f0f3f6, #e6ebf1 90%);
-  border-color: rgba(27, 31, 35, 0.35);
-  background-position: -0.5em;
-}
-.github-star-badge .material-icons {
-  height: 16px;
-  width: 16px;
-  margin-right: 4px;
-}
+
 svg#clouds {
   position: fixed;
   bottom: -160px;
